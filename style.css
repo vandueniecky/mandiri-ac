@@ -260,6 +260,27 @@
     background: #f5f5f5;
 }
 
+/* Company Profiles Style */
+.companyprofiles {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background-color: #696969;
+    color: white;
+}
+
+.display-4 {
+    font-weight: bold;
+}
+
+.lphr::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 100px;
+    border-top: 2px solid #444;
+}
+
+/* ________________ */
 @media (min-width: 992px){
     .imgaboutus {
         display: block;
