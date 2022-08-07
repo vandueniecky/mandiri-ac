@@ -1,0 +1,299 @@
+/* Akhir Webkit */
+
+.navbar {
+    background-color: transparent !important;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar.scrolled {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-brand.scrolled {
+    color: #EA5752;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    position: relative;
+    display: flex;    
+    width: 50px;
+    height: 32px;
+}
+
+.navbar-toggler.collapsed .a,
+.navbar-toggler.collapsed .b,
+.navbar-toggler.collapsed .c {
+    content: '';
+    position: absolute !important;
+    width: 50%;
+    height: 2px;
+    background: #000000;
+    transition: all 0.5s;
+}
+
+.navbar-toggler .a,
+.navbar-toggler .b,
+.navbar-toggler .c {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #000000;
+    transition: all 0.5s;
+}
+
+.navbar-toggler.collapsed .a {
+    top: 20%;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .b {
+    top: 46%;
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .c {
+    top: 72%;
+    transform: rotate(0);
+}
+
+.navbar-toggler .a {
+    transform: rotate(45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.navbar-toggler .b {
+    width: 0;
+    top: 50%;
+}
+
+.navbar-toggler .c {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    top: 50%;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-nav a {
+    color: #EA5752;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+.navbar ul {
+    text-align: center;
+}
+
+.navbar-nav a {
+    color: #f3f3f3;
+    border-radius: 20px;
+}
+
+.navbar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000;
+}
+
+.navbar.scrolled .navbar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000000;
+}
+
+.navbar-brand img {
+    padding-right: 6px;
+}
+
+.dropdown-menu {
+    background-color: #EA5752;
+}
+
+.navbar.scrolled .dropdown-menu {
+    background-color: #f5f5f5;
+}
+
+.logonav {
+    position: absolute;
+    max-width: 176px;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    max-height: 100vh;
+    color: white;
+    background-image: linear-gradient(160deg, rgba(44, 152, 224, 0.8), rgba(255, 255, 255, 0.8)),
+    url(img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.jumbotron h5 {
+    padding-top: 20%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.5);
+    letter-spacing: 4px;
+}
+
+.jumbotron h2 {
+    margin: 10px 5px 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.jumbotron img {
+    max-width: 316px;
+}
+
+.rd {
+    color: maroon;
+}
+
+.aboutus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: white;
+    background-color: #50a6d9;
+}
+
+.aboutus .card {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 0;
+    border-top: 6px solid #0a5df8;
+}
+
+.aboutus p {
+    text-align: justify;
+    font-size: 14pt;
+}
+
+.imgaboutus {
+    background: radial-gradient(ellipse at center, rgba(103, 178, 221, 0.7),rgb(25, 163, 197)), url(img/aboutus.jpg) no-repeat center center / cover;
+}
+
+.imgaboutus-sm {
+    width: 100%;
+    border: 10px solid #FFF;
+}
+
+.service {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    background-color: #eeeeee
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.service .jasa {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    background-color: #50a6d9;
+    padding: 0 2rem;
+}
+
+.contact-links {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-link {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 20px;
+    transition: all 0.5s;
+    transform: translate(0);
+}
+
+.profile-link:hover {
+    color: #EA5752;
+    transform: translateY(15px);
+}
+
+.footer {
+    color: #f5f5f5;
+    background-color: #50a6d9;
+    padding-bottom: 10px;
+}
+
+.footer p {
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.footer i {
+    color: crimson;
+}
+
+.footer .garis {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #f5f5f5;
+}
+
+@media (min-width: 992px){
+    .imgaboutus {
+        display: block;
+        position: absolute;
+        top: 950px;
+        right: 0;
+        width: 52%;
+        height: 100%;
+    }
+
+    .imgaboutus .imgaboutus-sm {
+        position: absolute;
+        top: auto;
+        bottom: -30px;
+        left: -40px;
+        right: auto;
+        width: 360px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    }
+
+    .namebrand {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .logonav {
+    visibility: hidden;
+    }
+}
