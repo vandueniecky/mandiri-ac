@@ -204,7 +204,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .imgaboutus {
-    background: radial-gradient(ellipse at center, rgba(103, 178, 221, 0.7),rgb(25, 163, 197)), url(img/aboutus.jpg) no-repeat center center / cover;
+    background: radial-gradient(ellipse at center, rgba(103, 178, 221, 0.7),rgb(25, 163, 197)), url(img/aboutus.jpeg) no-repeat center center / cover;
 }
 
 .imgaboutus-sm {
