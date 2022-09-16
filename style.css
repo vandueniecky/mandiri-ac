@@ -248,6 +248,77 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: center;
 }
 
+.contact1 {
+    padding-top: 4rem;
+    background-color: #50a6d9;
+}
+
+.contact1 h1 {
+    font-weight: 800;
+    font-size: 42px;
+    color: black;
+}
+
+.contact1 .btn {
+    background: #c42212;
+    color: white;
+}
+
+.contact1 .btn:hover {
+    background: #013456;
+}
+
+.control-form {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.control-form label {
+    font-weight: bold;
+}
+
+.control-form i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.control-form small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.control-form.success input,
+.control-form.success textarea {
+    border-color: #2ecc71;
+}
+
+.control-form.error input,
+.control-form.error textarea {
+    border-color: #e74c3c;
+}
+
+.control-form.success i.bi-check-circle-fill {
+    color: #2ecc71;
+    visibility: visible;
+    right: 30px;
+}
+
+.control-form.error i.bi-exclamation-circle-fill {
+    color: #e74c3c;
+    visibility: visible;
+    right: 30px;
+}
+
+.control-form.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
 .profile-link {
     color: #f5f5f5;
     text-decoration: none;
@@ -339,14 +410,8 @@ h1,h2,h3,h4,h5,h6 {
     .dropdown:hover .dropdown-menu {
     display: block;
     }
-
-    .namebrand {
-        visibility: hidden;
-    }
 }
 
 @media screen and (max-width: 768px){
-    .logonav {
-    visibility: hidden;
-    }
+    
 }

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" id="admin">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAC | Landing Page</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-default fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="namebrand">MANDIRI AC</span>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="a"></span>
+            <span class="b"></span>
+            <span class="c"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link scroll-trigger" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle scroll-trigger" href="#aboutus" role="button">ABOUT US</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="companyprofile.html">Company Profiles</a></li>
+                    <li><a class="dropdown-item" href="dafrarperalatan.html">Daftar Peralatan</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle scroll-trigger" href="#service" role="button">SERVICE</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Bidang Pekerjan</a></li>
+                    <li><a class="dropdown-item" href="#">Tarif Jasa</a></li>
+                    <li><a class="dropdown-item" href="#">Penetapan Garansi</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll-trigger" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll-trigger" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- Akhir Navbar -->
+
+<!-- List Data Konsumen -->
+<section class="contact1" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mb-5">
+                <h1>Input Data List Konsumen</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+                    <strong>Terima Kasi! <i class="bi bi-send-check-fill"></i></strong> data yang anda kirim telah masuk :)"
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                        <a href="#jasainer"></a>
+                    </button>
+                </div>
+                <form class="form" id="form" name="aplikasi-input-data">
+                    <div class="control-form">
+                        <label for="username" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Nama Konsumen..." required>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Massage</small>
+                    </div>
+                    <div class="control-form">
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input type="alamat" class="form-control" id="alamat" name="alamat" placeholder="Alamat Konsumen" required>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Massage</small>
+                    </div>
+                    <div class="control-form input-group">
+                        <select class="form-select" id="subjek" name="subjek">
+                            <option value="kosong" selected disabled>-- Pilih Kategori Pengerjaan --</option>
+                            <option value="perbaikan">Perbaikan AC</option>
+                            <option value="pemeliharaan">Pemeliharaan AC</option>
+                            <option value="pemasangan">Pemasangan AC</option>
+                            <option value="pembongkaran">Pembongkaran AC</option>
+                        </select>
+                        <small>Error Massage</small>
+                    </div>
+                    <div class="control-form pb-0">
+                        <label for="merk" class="form-label">Merk AC</label>
+                        <input type="merk" class="form-control" id="merk" name="merk" required">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="control-form input-group">
+                        <select class="form-select" id="pk" name="pk">
+                            <option value="" selected disabled>-- Berapa PK --</option>
+                            <option value="0,5PK">0,5PK</option>
+                            <option value="1PK">1PK</option>
+                            <option value="1,5PK">1,5PK</option>
+                            <option value="2PK">2PK</option>
+                            <option value="2,5PK">2,5PK</option>
+                            <option value="3PK">3PK</option>
+                            <option value="4PK">4PK</option>
+                            <option value="5PK">5PK</option>
+                        </select>
+                        <small>Error Massage</small>
+                    </div>
+                    <div class="control-form pb-0">
+                        <label for="harga" class="form-label">Nominal Pembayaran</label>
+                        <input type="number" class="form-control" id="harga" name="harga" required">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="control-form pb-0">
+                        <label for="kontak" class="form-label">No. Telp/Hp</label>
+                        <input type="tel" class="form-control" id="kontak" name="kontak" placeholder="(082)-xxx-xxxx-xx" required">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="control-form pb-0">
+                        <label for="pekerja" class="form-label">Pekerja</label>
+                        <input type="pekerja" class="form-control" id="pekerja" name="pekerja" required">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <i class="bi bi-exclamation-circle-fill"></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-kirim">Kirim</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4 text-center">
+                <div class="spinner-border text-primary btn-loading d-none" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End List Data Konsumen -->
+  
+<!-- Start Footer  -->
+<footer class="footer ms-auto">
+    <div class="container">
+        <div class="text-center">
+            <p>
+          **This is a OFFICIAL SITE.
+            </p>
+            <p>
+            &copy 2022 Created with <i class="bi bi-suit-heart-fill"></i> by MANDIRI AC
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+    
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
