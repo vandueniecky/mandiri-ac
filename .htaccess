@@ -1,6 +1,0 @@
-#hapus ekstensi di file html
-RewriteEnggine on
-RewriteEnggine %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteEnggine ^ /%1 [NC,L,R]
-RewriteEnggine %{REQUEST_FILENAME}.html -f
-RewriteEnggine ^ %{REQUEST_URI}.html [NC,L]
